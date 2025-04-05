@@ -25,7 +25,7 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build -t baliyan10/Docker_MultiC_node_app:latest ./app
-          docker push baliyan10/Docker_MultiC_node_app:latest
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/docker_multic_node_app:latest ./app
+          docker push ${{ secrets.DOCKER_USERNAME }}/docker_multic_node_app:latest
 
 
