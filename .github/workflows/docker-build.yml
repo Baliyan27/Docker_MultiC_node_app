@@ -28,3 +28,4 @@ jobs:
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/multi-contapp-app:latest ./app
           docker push ${{ secrets.DOCKERHUB_USERNAME }}/multi-contapp-app:latest
 
+
